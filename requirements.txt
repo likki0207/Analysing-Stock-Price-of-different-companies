@@ -2,7 +2,7 @@
 streamlit
 
 # Python packages
-numpy #==1.17.2
+numpy
 
 pandas
 base64
