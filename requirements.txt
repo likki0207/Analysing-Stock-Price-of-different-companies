@@ -1,7 +1,16 @@
-# These are the requirements to implement the Crypto-Currency-Tracker project
-
-# Streamlit is an open-source Python library that makes it easy to create and share beautiful, custom web apps for machine learning and data science. In just a few minutes you can build and deploy powerful data apps - so let's get started!
+# Web application development framework
 streamlit
 
-# Plotly provides online graphing, analytics, and statistics tools for individuals and collaboration, as well as scientific graphing libraries for Python, R, MATLAB, Perl, Julia, Arduino, and REST
-plotly.express
+# Python packages
+numpy #==1.17.2
+
+# Computer Vision
+opencv-python==4.1.1.26
+#opencv-contrib-python#==4.1.2.30
+
+# get data from URL
+pafy
+youtube-dl
+wget
+pipenv
+imutils
