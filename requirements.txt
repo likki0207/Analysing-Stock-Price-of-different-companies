@@ -16,4 +16,4 @@ requests
 yfinance
 
 # Plotly provides online graphing, analytics, and statistics tools for individuals and collaboration, as well as scientific graphing libraries for Python, R, MATLAB, Perl, Julia, Arduino, and REST
-plotly
+plotly.express
