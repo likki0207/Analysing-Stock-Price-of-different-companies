@@ -43,7 +43,7 @@ st.markdown(filedownload(df_selected_sector), unsafe_allow_html=True)
 
 
 data = yf.download(
-        tickers = list(df_selected_sector[:10].Security),
+        tickers = list(df_selected_sector[:10].Symbol),
         period = "ytd",
         interval = "1d",
         group_by = 'ticker',
@@ -69,5 +69,5 @@ num_company = st.sidebar.slider('Number of Companies', 1, 10)
 
 if st.button('Show Plots'):
     st.header('Closing Price of the stock')
-    for i in list(df_selected_sector.Security)[:num_company]:
+    for i in list(df_selected_sector.Symbol)[:num_company]:
         price_plot(i)
