@@ -69,6 +69,6 @@ def price_plot(symbol):
 num_company = st.sidebar.slider("Select the number of companies for which you want to see the plot",1, 10)
 
 if st.button('Show Plots'):
-    st.markdown("<h1 style='text-align: center; color: red;'>Closing price of the stock</h1>", unsafe_allow_html=True)
+    st.markdown("<h3 style='text-align: center; color: red;'>Closing price of the stock</h3>", unsafe_allow_html=True)
     for i in list(df_selected_sector.Symbol)[:num_company]:
         price_plot(i)
