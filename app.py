@@ -10,8 +10,8 @@ st.image(
             "https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-eu.s3.amazonaws.com%2Fbd4f2a60-11bb-11ea-a7e6-62bf4f9e548a?fit=scale-down&source=next&width=700",width=700# Manually Adjust the width of the image as per requirement
         )
 st.set_option('deprecation.showPyplotGlobalUse', False)
-st.markdown("<h1 style='text-align: center; color: green;'><u>Analysing Stock Prices for different companies</u></h1>", unsafe_allow_html=True)
-st.sidebar.markdown("<h3 style='text-align: center; color: green;'><u>Input features given by the user</u></h3>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: black;'><u>Analysing Stock Prices for different companies</u></h1>", unsafe_allow_html=True)
+st.sidebar.markdown("<h3 style='text-align: center; color: black;'><u>Input features given by the user</u></h3>", unsafe_allow_html=True)
 
 #Loading the data corresponding to each company
 @st.cache
