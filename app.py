@@ -7,7 +7,7 @@ import seaborn as sns
 import numpy as np
 import yfinance as yf
 st.image(
-            "https://cdn.analyticsvidhya.com/wp-content/uploads/2021/02/92495stock-market-trends-what-causes-stock-prices-to-change.jpg",width=700# Manually Adjust the width of the image as per requirement
+            "https://videohive.img.customer.envatousercontent.com/files/12ef7471-77e7-4c3e-930e-4f18369aabce/inline_image_preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=da4017d0ea681c0841fac26e57e1f1d8",width=700# Manually Adjust the width of the image as per requirement
         )
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.markdown("<h1 style='text-align: center; color: Yellow;'><u>Analysing Stock Prices for different companies</u></h1>", unsafe_allow_html=True)
