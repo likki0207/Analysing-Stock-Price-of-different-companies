@@ -1,3 +1,4 @@
+#Importing the required Libraries
 import streamlit as st
 import pandas as pd
 import base64
@@ -6,18 +7,11 @@ import seaborn as sns
 import numpy as np
 import yfinance as yf
 
-st.title('S&P 500 App')
 
-st.markdown("""
-This app retrieves the list of the **S&P 500** (from Wikipedia) and its corresponding **stock closing price** (year-to-date)!
-* **Python libraries:** base64, pandas, streamlit, numpy, matplotlib, seaborn
-* **Data source:** [Wikipedia](https://en.wikipedia.org/wiki/List_of_S%26P_500_companies).
-""")
-
+st.title('Analysing Stock Prices for different companies')
 st.sidebar.header('User Input Features')
 
-# Web scraping of S&P 500 data
-#
+#Loading the data corresponding to each company
 @st.cache
 def load_data():
     url = 'https://en.wikipedia.org/wiki/List_of_S%26P_500_companies'
@@ -40,7 +34,6 @@ st.write('Data Dimension: ' + str(df_selected_sector.shape[0]) + ' rows and ' + 
 st.dataframe(df_selected_sector)
 
 # Download S&P500 data
-# https://discuss.streamlit.io/t/how-to-download-file-in-streamlit/1806
 def filedownload(df):
     csv = df.to_csv(index=False)
     b64 = base64.b64encode(csv.encode()).decode()  # strings <-> bytes conversions
@@ -49,7 +42,6 @@ def filedownload(df):
 
 st.markdown(filedownload(df_selected_sector), unsafe_allow_html=True)
 
-# https://pypi.org/project/yfinance/
 
 data = yf.download(
         tickers = list(df_selected_sector[:10].Symbol),
