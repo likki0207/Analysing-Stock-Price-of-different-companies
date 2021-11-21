@@ -7,8 +7,8 @@ import seaborn as sns
 import numpy as np
 import yfinance as yf
 st.image(
-            "https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/6/2017/11/04133712/waterfall.jpg",
-            width=400, # Manually Adjust the width of the image as per requirement
+            "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.analyticsvidhya.com%2Fblog%2F2021%2F07%2Fstock-prices-analysis-with-python%2F&psig=AOvVaw0xtsxaHUZKQOnGQKAUeMIX&ust=1637571933137000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPCv7_2MqfQCFQAAAAAdAAAAABAD",
+            width=1000, # Manually Adjust the width of the image as per requirement
         )
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.markdown("<h1 style='text-align: center; color: Yellow;'><u>Analysing Stock Prices for different companies</u></h1>", unsafe_allow_html=True)
