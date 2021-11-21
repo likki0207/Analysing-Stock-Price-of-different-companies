@@ -11,7 +11,7 @@ st.image(
         )
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.markdown("<h1 style='text-align: center; color: Yellow;'><u>Analysing Stock Prices for different companies</u></h1>", unsafe_allow_html=True)
-st.sidebar.markdown("<h1 style='text-align: center; color: White;'><u>Input features given by the user</u></h1>", unsafe_allow_html=True)
+st.sidebar.markdown("<h3 style='text-align: center; color: White;'><u>Input features given by the user</u></h3>", unsafe_allow_html=True)
 
 #Loading the data corresponding to each company
 @st.cache
@@ -30,7 +30,7 @@ selected_sector = st.sidebar.multiselect('Sector', sorted_sector_unique, sorted_
 
 # Filtering data
 df_selected_sector = df[ (df['GICS Sector'].isin(selected_sector)) ]
-st.markdown("<h1 style='text-align: center; color: red;'><u>Displaying the Companies in the Selected Sector</u></h1>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center; color: red;'>Displaying the Companies in the Selected Sector</h3>", unsafe_allow_html=True)
 st.dataframe(df_selected_sector)
 
 # Download S&P500 data
