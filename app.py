@@ -6,7 +6,10 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 import yfinance as yf
-
+ st.image(
+            "https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/6/2017/11/04133712/waterfall.jpg",
+            width=400, # Manually Adjust the width of the image as per requirement
+        )
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.markdown("<h1 style='text-align: center; color: Yellow;'><u>Analysing Stock Prices for different companies</u></h1>", unsafe_allow_html=True)
 st.sidebar.markdown("<h1 style='text-align: center; color: White;'><u>Input features given by the user</u></h1>", unsafe_allow_html=True)
