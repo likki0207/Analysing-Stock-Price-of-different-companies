@@ -7,7 +7,7 @@ import seaborn as sns
 import numpy as np
 import yfinance as yf
 
-
+st.set_option('deprecation.showPyplotGlobalUse', False)
 st.title('Analysing Stock Prices for different companies')
 st.sidebar.header('Input Features Given by the user')
 
