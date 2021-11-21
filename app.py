@@ -8,7 +8,8 @@ import numpy as np
 import yfinance as yf
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
-st.title('Analysing Stock Prices for different companies')
+st.markdown("<h1 style='text-align: center; color: Yellow;'>Analysing Stock Prices for different companies</h1>", unsafe_allow_html=True)
+#st.title('Analysing Stock Prices for different companies')
 st.sidebar.header('Input Features Given by the user')
 
 #Loading the data corresponding to each company
