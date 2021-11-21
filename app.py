@@ -9,7 +9,7 @@ import yfinance as yf
 
 
 st.title('Analysing Stock Prices for different companies')
-st.sidebar.header('User Input Features')
+st.sidebar.header('Input Features Given by the user')
 
 #Loading the data corresponding to each company
 @st.cache
@@ -29,8 +29,7 @@ selected_sector = st.sidebar.multiselect('Sector', sorted_sector_unique, sorted_
 # Filtering data
 df_selected_sector = df[ (df['GICS Sector'].isin(selected_sector)) ]
 
-st.header('Display Companies in Selected Sector')
-st.write('Data Dimension: ' + str(df_selected_sector.shape[0]) + ' rows and ' + str(df_selected_sector.shape[1]) + ' columns.')
+st.header('Displaying the Companies in the Selected Sector')
 st.dataframe(df_selected_sector)
 
 # Download S&P500 data
@@ -44,7 +43,7 @@ st.markdown(filedownload(df_selected_sector), unsafe_allow_html=True)
 
 
 data = yf.download(
-        tickers = list(df_selected_sector[:10].Symbol),
+        tickers = list(df_selected_sector[:10].Security),
         period = "ytd",
         interval = "1d",
         group_by = 'ticker',
@@ -54,7 +53,7 @@ data = yf.download(
         proxy = None
     )
 
-# Plot Closing Price of Query Symbol
+# Plot Closing Price of Query Security
 def price_plot(symbol):
   df = pd.DataFrame(data[symbol].Close)
   df['Date'] = df.index
@@ -66,9 +65,9 @@ def price_plot(symbol):
   plt.ylabel('Closing Price', fontweight='bold')
   return st.pyplot()
 
-num_company = st.sidebar.slider('Number of Companies', 1, 5)
+num_company = st.sidebar.slider('Number of Companies', 1, 10)
 
 if st.button('Show Plots'):
-    st.header('Stock Closing Price')
-    for i in list(df_selected_sector.Symbol)[:num_company]:
+    st.header('Closing Price of the stock')
+    for i in list(df_selected_sector.Security)[:num_company]:
         price_plot(i)
