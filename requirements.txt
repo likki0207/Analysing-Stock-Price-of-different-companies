@@ -5,6 +5,6 @@ streamlit
 numpy
 
 pandas
-base64
+
 matplotlib
 seaborn 
