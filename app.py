@@ -12,7 +12,7 @@ st.image(
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.markdown("<h1 style='text-align: center; color: black;'><u>Analysing Stock Prices for different companies</u></h1>", unsafe_allow_html=True)
 st.sidebar.markdown("<h3 style='text-align: center; color: black;'><u>Input features given by the user</u></h3>", unsafe_allow_html=True)
-st.sidebar.markdown("<h3 style='text-align: center; color: black;'><u>Select the sectors you want</u></h3>", unsafe_allow_html=True)
+st.sidebar.markdown("<h4 style='text-align: center; color: black;'>Select the sectors you want</h4>", unsafe_allow_html=True)
 #Loading the data corresponding to each company
 @st.cache
 def load_data():
@@ -65,8 +65,8 @@ def price_plot(symbol):
   plt.xlabel('Date', fontweight='bold')
   plt.ylabel('Closing Price', fontweight='bold')
   return st.pyplot()
-
-num_company = st.sidebar.slider("Select the number of companies for which you want to see the plot",1, 10)
+st.sidebar.markdown("<h4 style='text-align: center; color: black;'>Select the number of companies you want</h4>", unsafe_allow_html=True)
+num_company = st.sidebar.slider("number of companies",1, 10)
 
 if st.button('Show Plots'):
     st.markdown("<h3 style='text-align: center; color: red;'>Closing price of the stock</h3>", unsafe_allow_html=True)
