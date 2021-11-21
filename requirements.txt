@@ -1,6 +1,19 @@
+# These are the requirements to implement the Crypto-Currency-Tracker project
+
+# Streamlit is an open-source Python library that makes it easy to create and share beautiful, custom web apps for machine learning and data science. In just a few minutes you can build and deploy powerful data apps - so let's get started!
 streamlit 
+
+# pandas is a software library written for the Python programming language for data manipulation and analysis
 pandas 
+
+# Matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy.
 matplotlib
+
+# Seaborn is an open-source Python library built on top of matplotlib. It is used for data visualization and exploratory data analysis. Seaborn works easily with dataframes and the Pandas library
 seaborn
+
+# NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.
 numpy
+
+# Yfinance is a python package that enables us to fetch historical market data from Yahoo Finance API in a Pythonic way. It becomes so easy for all the Python developers to get data with the help of yfinance
 yfinance
