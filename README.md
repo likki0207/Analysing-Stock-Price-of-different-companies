@@ -1,5 +1,5 @@
 # Analysing-Stock-Price-of-different-companies
-This Application can be used to track Cryptocurrencies such as BitCoin, ethereum, Dogecoin
+This Application can be used to Analyse the Stock Prices of different companies
 
 # How to run the web application?
 Select the input features (Select the sectors you want and number of companies for which you want to display for stock price graph)
