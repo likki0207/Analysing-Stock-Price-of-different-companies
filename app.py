@@ -30,7 +30,7 @@ selected_sector = st.sidebar.multiselect('Sector', sorted_sector_unique, sorted_
 
 # Filtering data
 df_selected_sector = df[ (df['GICS Sector'].isin(selected_sector)) ]
-st.header.markdown("<h1 style='text-align: center; color: red;'><u>Displaying the Companies in the Selected Sector</u></h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: red;'><u>Displaying the Companies in the Selected Sector</u></h1>", unsafe_allow_html=True)
 st.dataframe(df_selected_sector)
 
 # Download S&P500 data
