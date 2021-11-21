@@ -8,7 +8,7 @@ import numpy as np
 import yfinance as yf
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
-st.markdown("<h1<u> style='text-align: center; color: Yellow;'>Analysing Stock Prices for different companies</u></h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: Yellow;'><u>Analysing Stock Prices for different companies</u></h1>", unsafe_allow_html=True)
 #st.title('Analysing Stock Prices for different companies')
 st.sidebar.header('Input Features Given by the user')
 
