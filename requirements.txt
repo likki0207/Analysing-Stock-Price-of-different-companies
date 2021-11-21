@@ -1,0 +1,19 @@
+# These are the requirements to implement the Crypto-Currency-Tracker project
+
+# Streamlit is an open-source Python library that makes it easy to create and share beautiful, custom web apps for machine learning and data science. In just a few minutes you can build and deploy powerful data apps - so let's get started!
+streamlit
+
+# NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.
+numpy
+
+# pandas is a software library written for the Python programming language for data manipulation and analysis
+pandas
+
+# Requests is a HTTP library for the Python programming language. The goal of the project is to make HTTP requests simpler and more human-friendly.
+requests
+
+# Yfinance is a python package that enables us to fetch historical market data from Yahoo Finance API in a Pythonic way. It becomes so easy for all the Python developers to get data with the help of yfinance
+yfinance
+
+# Plotly provides online graphing, analytics, and statistics tools for individuals and collaboration, as well as scientific graphing libraries for Python, R, MATLAB, Perl, Julia, Arduino, and REST
+plotly
