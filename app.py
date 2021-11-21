@@ -66,7 +66,8 @@ def price_plot(symbol):
   return st.pyplot()
 
 num_company = st.sidebar.slider('Number of Companies', 1, 10)
-
+[deprecation]
+showPyplotGlobalUse = False
 if st.button('Show Plots'):
     st.header('Closing Price of the stock')
     for i in list(df_selected_sector.Symbol)[:num_company]:
